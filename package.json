@@ -1,0 +1,11 @@
+{
+  "name": "navrynt-demo",
+  "version": "1.0.0-showcase.1",
+  "private": true,
+  "description": "Static browser-local fictional investigation workspace",
+  "scripts": {
+    "check": "node scripts/validate.mjs",
+    "serve": "python3 -m http.server 4173"
+  },
+  "license": "Apache-2.0"
+}

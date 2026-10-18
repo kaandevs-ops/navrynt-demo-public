@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Interactive public showcase for Navrynt — a self-hosted AI, geospatial, media analysis and biometric intelligence platform." name="description"/>
+<meta content="#070a0f" name="theme-color"/>
+<title>Navrynt Demo — Intelligence OS</title>
+<link href="assets/favicon.png" rel="icon"/>
+<link href="styles.css?v=2" rel="stylesheet"/>
+<link href="https://kaandevs-ops.github.io/navrynt-demo-public/" rel="canonical"/><meta content="https://kaandevs-ops.github.io/navrynt-demo-public/" property="og:url"/></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-banner" role="status">
+<span class="demo-banner__dot"></span>
+    PUBLIC DEMO · FICTIONAL WORKSPACE · NO LIVE COLLECTION
+  </div>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+<a aria-label="Navrynt dashboard" class="brand" data-nav="dashboard" href="#dashboard">
+<img alt="" src="assets/navrynt-logo.png"/>
+<span><strong>Navrynt</strong><small>Intelligence OS</small></span>
+</a>
+<div class="workspace-card">
+<div class="workspace-card__icon">N</div>
+<div><small>Demo workspace</small><strong>evaluation-lab</strong></div>
+<span class="status-dot"></span>
+</div>
+<nav aria-label="Demo navigation">
+<p class="nav-label">Investigation</p>
+<button class="nav-item active" data-page="dashboard"><span>◫</span> Overview</button>
+<button class="nav-item" data-page="investigations"><span>⌕</span> Investigations</button>
+<button class="nav-item" data-page="graph"><span>⌘</span> Entity Graph</button>
+<p class="nav-label">Intelligence</p>
+<button class="nav-item" data-page="geoint"><span>◎</span> GEOINT</button>
+<button class="nav-item" data-page="media"><span>◩</span> Media Forensics</button>
+<button class="nav-item" data-page="biometrics"><span>◉</span> Biometric Lab <em>NEW</em></button>
+<p class="nav-label">Automation</p>
+<button class="nav-item" data-page="model-studio"><span>◇</span> Model Studio</button>
+<button class="nav-item" data-page="plugins"><span>⬡</span> Plugin Marketplace</button>
+<p class="nav-label">Administration</p>
+
+<button class="nav-item" data-page="scope"><span>◆</span> Project Scope</button>
+</nav>
+<div class="sidebar-footer">
+<div class="analyst-avatar">D</div>
+<div><strong>Demo Analyst</strong><small>Local evaluation session</small></div>
+</div>
+</aside>
+<section class="stage">
+<header class="topbar">
+<button aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation" class="icon-btn mobile-only" id="menuButton">☰</button>
+<div class="breadcrumb"><span>Navrynt /</span><strong id="pageTitle">Overview</strong></div>
+<div class="topbar-actions">
+<span class="health"><i></i> Interactive product preview</span>
+<button class="command-btn" id="commandBtn" title="Open command palette"><kbd>⌘</kbd><kbd>K</kbd> Command</button>
+<button class="secondary-btn edition-btn" id="editionBtn">About project ↗</button>
+<button aria-label="Toggle theme" class="icon-btn" id="themeBtn">☼</button>
+</div>
+</header>
+<main id="main" tabindex="-1"></main>
+</section>
+</div>
+<div class="modal-backdrop" hidden="" id="modalBackdrop">
+<div aria-labelledby="modalTitle" aria-modal="true" class="modal" role="dialog">
+<button aria-label="Close" class="modal-close" id="modalClose">×</button>
+<div class="eyebrow">NAVRYNT PROJECT OVERVIEW</div>
+<h2 id="modalTitle">Explore the NAVRYNT project.</h2>
+<p>Explore investigation, geospatial context, biometric workflow previews. This public demonstration runs locally without application services.</p>
+<div class="modal-grid">
+<div><strong>6</strong><span>modality previews</span></div>
+<div><strong>5</strong><span>guided tour steps</span></div>
+
+</div>
+<a class="primary-btn full" href="https://kaandevs-ops.github.io/navrynt-website-public/" rel="noopener noreferrer" target="_blank">Explore project website</a>
+<small class="fine-print">Both destinations are public showcases. Interactive case data is fictional; inference and live collection do not run in this demo.</small>
+</div>
+</div>
+<div class="command-palette" hidden="" id="commandPalette">
+<div aria-labelledby="commandTitle" aria-modal="true" class="command-panel" role="dialog">
+<div class="command-search"><span>⌕</span><input aria-label="Search commands" autocomplete="off" id="commandInput" placeholder="Jump to a demo module…"/></div>
+<p id="commandTitle">Quick navigation</p>
+<div id="commandResults"></div>
+<small>↑ ↓ navigate · Enter open · Esc close</small>
+</div>
+</div>
+<button aria-label="Close navigation" class="sidebar-scrim" hidden="" id="sidebarScrim"></button>
+<div class="drawer-backdrop" hidden="" id="detailDrawer"><section aria-labelledby="drawerTitle" aria-modal="true" class="detail-drawer" role="dialog"><div class="drawer-header"><h2 id="drawerTitle"></h2><button aria-label="Close details" class="icon-btn" id="drawerClose">×</button></div><div id="drawerBody"></div></section></div>
+<aside aria-label="Guided product tour" class="tour-bar" hidden="" id="tourBar"></aside>
+<div class="toast" hidden="" id="toast" role="status"></div>
+<script src="scope-view.js?v=public-1"></script>
+<script src="app.js?v=2"></script>
+</body>
+</html>
