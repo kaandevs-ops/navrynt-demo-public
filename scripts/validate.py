@@ -54,7 +54,8 @@ for p in files:
 if not (ROOT/'site').exists():
  for name in ['app.js','scope-view.js']:
   if re.search(r'\bfetch\s*\(|XMLHttpRequest|WebSocket\s*\(', (ROOT/name).read_text()):errors.append('Unexpected live network client in demo')
- manifest={}
+ manifest_file=ROOT/'assets/proof/SHA256.json'
+ manifest=json.loads(manifest_file.read_text()) if manifest_file.exists() else {}
  for name,digest in manifest.items():
   if hashlib.sha256((ROOT/'assets/proof'/name).read_bytes()).hexdigest()!=digest:errors.append(f'Changed original recording: {name}')
 manifest_path=ROOT/'docs/ORIGINAL-MEDIA-SHA256.json'
