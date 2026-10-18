@@ -169,7 +169,7 @@ LICENSE             Apache License 2.0
 python3 scripts/validate.py
 ```
 
-The standard-library validator checks local file links, HTML IDs, image alt attributes, publication boundaries and JavaScript syntax when Node.js is available. Node.js is optional for running the demo. The recorded walkthrough covers actual UI interactions; it is not a comprehensive automated accessibility or production test suite. GitHub Pages serves the static project from `main` with `.nojekyll`; no application backend is deployed.
+The standard-library validator checks local file links, HTML IDs, image alt attributes, publication boundaries and JavaScript syntax when Node.js is available. Node.js is optional for running the demo. The recorded walkthrough covers actual UI interactions; it is not a comprehensive automated accessibility or production test suite. GitHub Pages serves the static project from `main` with `.nojekyll`; no application backend is deployed. A separate validation workflow checks files and media integrity on pushes and pull requests. [Hosting details](docs/DEPLOYMENT.md).
 
 ## Feedback and license
 

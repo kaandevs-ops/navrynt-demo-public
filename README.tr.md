@@ -133,7 +133,7 @@ LICENSE             Apache License 2.0
 python3 scripts/validate.py
 ```
 
-Kontrol; yerel dosya bağlantılarını, HTML kimliklerini, görsel alternatif metinlerini ve yayın sınırlarını inceler. Node.js varsa JavaScript sözdizimini de kontrol eder. Demoyu çalıştırmak için Node.js zorunlu değildir. Bu kontrol kapsamlı otomatik erişilebilirlik veya üretim testi değildir. Pages, `.nojekyll` ile `main` dalındaki statik dosyaları sunar; uygulama backend’i yayımlanmaz.
+Kontrol; yerel dosya bağlantılarını, HTML kimliklerini, görsel alternatif metinlerini ve yayın sınırlarını inceler. Node.js varsa JavaScript sözdizimini de kontrol eder. Demoyu çalıştırmak için Node.js zorunlu değildir. Bu kontrol kapsamlı otomatik erişilebilirlik veya üretim testi değildir. Pages, `.nojekyll` ile `main` dalındaki statik dosyaları sunar; uygulama backend’i yayımlanmaz. Ayrı doğrulama iş akışı dosyaları ve medya hashlerini push/PR sırasında kontrol eder. [Yayın bilgileri](docs/DEPLOYMENT.md).
 
 Bir hata bulursan [issue açabilirsin](https://github.com/kaandevs-ops/navrynt-demo-public/issues). Tarayıcıyı, ekran boyutunu, adımları ve beklenen sonucu belirt; kişisel bilgi veya erişim anahtarı paylaşma.
 

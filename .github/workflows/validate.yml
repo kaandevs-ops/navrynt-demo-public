@@ -1,0 +1,23 @@
+name: Validate static demo
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check static files and media integrity
+        run: |
+          python3 scripts/validate.py
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          folder = Path('docs/media')
+          for name, digest in json.loads((folder / 'SHA256.json').read_text()).items():
+              assert hashlib.sha256((folder / name).read_bytes()).hexdigest() == digest, name
+          PY
