@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/stack-HTML%20%C2%B7%20CSS%20%C2%B7%20JavaScript-89c4ff?style=flat-square" alt="Stack: HTML, CSS and JavaScript">
 </p>
 <p align="center">
-  <a href="#demo">Demo</a> · <a href="#quick-start">Quick start</a> · <a href="#features">Features</a> · <a href="#screenshots">Screenshots</a> · <a href="#scope">Scope</a> · <a href="docs/WORKFLOWS.md">Workflow guide</a>
+  <a href="README.tr.md">Türkçe</a> · <a href="#demo">Demo</a> · <a href="#quick-start">Quick start</a> · <a href="#features">Features</a> · <a href="#screenshots">Screenshots</a> · <a href="#scope">Scope</a> · <a href="docs/WORKFLOWS.md">Workflow guide</a>
 </p>
 
 ![NAVRYNT investigation workspace overview](docs/media/overview.png)
