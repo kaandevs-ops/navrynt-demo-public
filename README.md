@@ -12,12 +12,12 @@
   <img src="https://img.shields.io/badge/stack-HTML%20%C2%B7%20CSS%20%C2%B7%20JavaScript-89c4ff?style=flat-square" alt="Stack: HTML, CSS and JavaScript">
 </p>
 <p align="center">
-  <a href="README.tr.md">Türkçe</a> · <a href="#demo">Demo</a> · <a href="#quick-start">Quick start</a> · <a href="#features">Features</a> · <a href="#screenshots">Screenshots</a> · <a href="#scope">Scope</a> · <a href="docs/WORKFLOWS.md">Workflow guide</a>
+  <a href="https://kaandevs-ops.github.io/navrynt-demo-public/">Open live demo ↗</a> · <a href="README.tr.md">Türkçe</a> · <a href="#demo">Demo</a> · <a href="#quick-start">Quick start</a> · <a href="#features">Features</a> · <a href="#screenshots">Screenshots</a> · <a href="#scope">Scope</a> · <a href="docs/WORKFLOWS.md">Workflow guide</a>
 </p>
 
 ![NAVRYNT investigation workspace overview](docs/media/overview.png)
 
-> **Static demo, explicit boundaries.** The interactive case, entities and tracks are fictional. Local file hashing really runs in the browser. Biometric tabs and Model Studio are workflow previews: no model inference, live intelligence collection or training runs here. GitHub Pages is not enabled; run the demo locally using the commands below.
+> **Static demo, explicit boundaries.** The interactive case, entities and tracks are fictional. Local file hashing really runs in the browser. Biometric tabs and Model Studio are workflow previews: no model inference, live intelligence collection or training runs here. Open the live demo or run it locally using the commands below. Separate historical full-product recordings are available under Full Product.
 
 ## Demo
 
@@ -64,6 +64,33 @@ Try this path: **Investigations → Harbor Signals → evidence timeline → Ent
 ![Actual static-demo tabs for Face, Iris, Fingerprint, Voiceprint, Writer-ID and Gait](docs/media/biometric-previews.gif)
 
 **Face · Iris · Fingerprint · Voiceprint · Writer-ID · Gait** each has a dedicated preview. Stages and boundary notes explain the workflow without requesting biometric data. Illustrative scores and descriptions do not constitute a new identification result or a deployment accuracy benchmark.
+
+## About the full NAVRYNT application
+
+NAVRYNT is a separate self-hosted investigation application with a Python backend and React workspace. It brings together evidence review, relationship graphs, geospatial views, provider adapters, six biometric service paths and supported model lifecycle operations. Installation, model dependencies and provider access are configured separately.
+
+**[Explore the full-product section](https://kaandevs-ops.github.io/navrynt-demo-public/#proof)** · [Recording sources and limits](docs/FULL-PRODUCT.md) · [Watch the 24-second product tour](assets/proof/product-tour.mp4)
+
+| This public demo | Separate full application |
+|---|---|
+| Fictional cases, selectable SVG graph and generated tracks | Configured investigation workflows and data adapters |
+| Six biometric interface previews | Separate model services with protocol-specific evaluation |
+| Example plan with `executes: false` | Supported jobs with required models, data and runtimes |
+| Browser-local interactions without a backend | Self-hosted backend/frontend and separately configured providers |
+
+### Actual full-product captures
+
+These four historical runs were captured on **16 October 2026**. They are separate from the fictional demo. Playing a clip does not execute that workflow in the browser.
+
+| Regional aircraft exploration | Earthquake map |
+|---|---|
+| [![Actual application: aircraft positions](assets/proof/aircraft.png)](assets/proof/aircraft.mp4) | [![Actual application: earthquake map](assets/proof/earthquakes.png)](assets/proof/earthquakes.mp4) |
+
+| Company relationship review | Research voice comparison |
+|---|---|
+| [![Actual application: company relationship](assets/proof/companies.png)](assets/proof/companies.mp4) | [![Actual application: voice comparison](assets/proof/voice.png)](assets/proof/voice.mp4) |
+
+Sources: ADSB.lol/OpenStreetMap, USGS/OpenStreetMap, GLEIF and LibriSpeech. Aircraft data is a historical snapshot; company parentage is an accounting relationship; the voice example is research evidence, not general identity accuracy. These clips do not establish that every provider, biometric service or deployment combination works. [Full attribution and limitations](docs/FULL-PRODUCT.md).
 
 ## Screenshots
 
@@ -115,7 +142,7 @@ Try this path: **Investigations → Harbor Signals → evidence timeline → Ent
 | Web Crypto SHA-256 of a selected file | Biometric model execution and identity galleries |
 | Example brief and non-executing model-plan exports | Model loading, training, evaluation and artifact export |
 
-A matching hash proves byte equality, not authenticity. A graph link does not prove identity. Workflow previews do not establish biometric accuracy or production readiness. The private full application, licensing tools, credentials, model weights and research datasets are not distributed here. Historical full-product recordings are not included in this demo repository.
+A matching hash proves byte equality, not authenticity. A graph link does not prove identity. Workflow previews do not establish biometric accuracy or production readiness. The private full application, licensing tools, credentials, model weights and research datasets are not distributed here. Four historical full-product recordings and their source notes are included separately from the fictional demo interactions.
 
 ## Technology and structure
 
@@ -128,7 +155,9 @@ scope-view.js       Data and execution boundaries
 styles.css          Responsive interface and dark/light themes
 assets/             Logo and favicon
 docs/WORKFLOWS.md   Hands-on walkthrough and troubleshooting
-docs/MEDIA.md       Capture method and media checksums
+docs/MEDIA.md       Demo capture method and media checksums
+docs/FULL-PRODUCT.md Full-application evidence, sources and limits
+assets/proof/       Historical full-product clips, screenshots and captions
 docs/media/         Actual demo screenshots, GIFs and edited video
 scripts/            Static-file validation helpers
 LICENSE             Apache License 2.0
@@ -140,7 +169,7 @@ LICENSE             Apache License 2.0
 python3 scripts/validate.py
 ```
 
-The standard-library validator checks local file links, HTML IDs, image alt attributes, publication boundaries and JavaScript syntax when Node.js is available. Node.js is optional for running the demo. The recorded walkthrough covers actual UI interactions; it is not a comprehensive automated accessibility or production test suite. No CI or Pages deployment workflow is configured.
+The standard-library validator checks local file links, HTML IDs, image alt attributes, publication boundaries and JavaScript syntax when Node.js is available. Node.js is optional for running the demo. The recorded walkthrough covers actual UI interactions; it is not a comprehensive automated accessibility or production test suite. GitHub Pages serves the static project from `main` with `.nojekyll`; no application backend is deployed.
 
 ## Feedback and license
 

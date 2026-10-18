@@ -1,12 +1,14 @@
 # Demo capture provenance
 
-All screenshots show actual browser interactions with the static demo in this repository, captured on 18 October 2026. No full-product inference results or live provider queries are presented as demo operations.
+All screenshots show actual browser interactions with the static demo in this repository, captured on 18 October 2026. No full-product inference results or live provider queries are presented as demo operations. The separately labelled Full Product section includes historical application recordings; its sources and limits are documented in FULL-PRODUCT.md.
 
 ## Screenshots
 
-Fourteen PNGs cover Overview, case review, selected graph node, GEOINT, local SHA-256, six biometric tabs, example model plan, light theme and a 390 × 844 mobile viewport. Desktop captures use a 1280 × 720 viewport. Case records and movement observations are fictional. Biometric panels are workflow previews, not model execution.
+Fifteen PNGs cover Overview, case review, selected graph node, GEOINT, local SHA-256, six biometric tabs, example model plan, light theme a 390 × 844 mobile viewport, and the separate Full Product section. Desktop captures use a 1280 × 720 viewport. Case records and movement observations are fictional. Biometric panels are workflow previews, not model execution.
 
 The local hash screenshot shows a 61-byte fictional demonstration text file with SHA-256 `ede71a935ecd26c4c0786a64c176919f980eb698ef4fc887d3bd6e0c1275b4da`. Its bytes were hashed in the browser; the screenshot does not imply file authenticity.
+
+The Overview and Full Product stills were refreshed when the recording section was added. The demo GIF/video retain their earlier captured navigation layout; they document the unchanged fictional interaction workflows.
 
 ## GIFs
 
